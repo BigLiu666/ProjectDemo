@@ -1,0 +1,5 @@
+2024-01-10 19:17:37,722 WARN [http-nio-8080-exec-6] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [207] milliseconds.
+2024-01-10 20:51:26,877 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:766] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54m18s884ms308µs400ns).
+2024-01-10 21:20:04,348 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [182] milliseconds.
+2024-01-10 21:59:59,765 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:766] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m17s2ms847µs800ns).
+2024-01-10 22:03:46,519 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:766] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m55s949ms241µs600ns).

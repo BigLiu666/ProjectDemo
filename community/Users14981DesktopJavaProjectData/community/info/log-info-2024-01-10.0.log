@@ -1,0 +1,20 @@
+2024-01-10 09:56:42,422 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:50] Starting MapperTests on DESKTOP-K94GPRD with PID 1308 (started by 14981 in C:\Users\14981\Desktop\Java\Project\project-01\community)
+2024-01-10 09:56:42,447 INFO [main] c.n.c.MapperTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-10 09:56:45,170 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-10 09:56:45,465 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2024-01-10 09:56:45,858 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:59] Started MapperTests in 4.325 seconds (JVM running for 5.293)
+2024-01-10 09:56:46,357 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-01-10 09:56:46,617 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-01-10 09:56:46,734 INFO [Thread-2] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-10 09:56:46,736 INFO [Thread-2] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-01-10 09:56:46,747 INFO [Thread-2] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2024-01-10 09:59:43,570 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:50] Starting MapperTests on DESKTOP-K94GPRD with PID 6936 (started by 14981 in C:\Users\14981\Desktop\Java\Project\project-01\community)
+2024-01-10 09:59:43,573 INFO [main] c.n.c.MapperTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-10 09:59:46,229 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-10 09:59:46,498 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2024-01-10 09:59:46,831 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:59] Started MapperTests in 4.038 seconds (JVM running for 4.972)
+2024-01-10 09:59:47,246 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-01-10 09:59:47,462 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-01-10 09:59:47,590 INFO [Thread-2] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-10 09:59:47,592 INFO [Thread-2] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-01-10 09:59:47,605 INFO [Thread-2] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.

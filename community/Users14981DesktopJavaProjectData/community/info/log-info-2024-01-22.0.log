@@ -1,0 +1,24 @@
+2024-01-22 16:08:37,983 INFO [main] c.n.c.RedisTest [StartupInfoLogger.java:50] Starting RedisTest on DESKTOP-K94GPRD with PID 12604 (started by 14981 in C:\Users\14981\Desktop\Java\Project\project-01\community)
+2024-01-22 16:08:38,006 INFO [main] c.n.c.RedisTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-22 16:08:39,130 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-22 16:08:39,133 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-22 16:08:39,163 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2024-01-22 16:08:39,688 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec4a1f33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-22 16:08:42,032 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-22 16:08:42,293 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2024-01-22 16:08:42,889 INFO [main] c.n.c.RedisTest [StartupInfoLogger.java:59] Started RedisTest in 5.885 seconds (JVM running for 7.485)
+2024-01-22 16:08:43,537 INFO [main] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2024-01-22 16:08:43,539 INFO [main] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2024-01-22 16:08:44,379 INFO [Thread-2] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-22 20:48:27,575 INFO [main] c.n.c.RedisTest [StartupInfoLogger.java:50] Starting RedisTest on DESKTOP-K94GPRD with PID 4976 (started by 14981 in C:\Users\14981\Desktop\Java\Project\project-01\community)
+2024-01-22 20:48:27,579 INFO [main] c.n.c.RedisTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-22 20:48:28,748 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-22 20:48:28,752 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-22 20:48:28,785 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2024-01-22 20:48:29,362 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9a5a7bfd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-22 20:48:32,061 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-22 20:48:32,392 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2024-01-22 20:48:33,099 INFO [main] c.n.c.RedisTest [StartupInfoLogger.java:59] Started RedisTest in 6.572 seconds (JVM running for 8.124)
+2024-01-22 20:48:33,832 INFO [main] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2024-01-22 20:48:33,834 INFO [main] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2024-01-22 20:48:34,814 INFO [Thread-2] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'

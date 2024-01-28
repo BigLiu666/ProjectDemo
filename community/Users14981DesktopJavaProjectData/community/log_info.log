@@ -1,0 +1,780 @@
+2024-01-27 16:05:13,544 INFO [main] c.n.c.ElasticSearchTest [StartupInfoLogger.java:50] Starting ElasticSearchTest on DESKTOP-K94GPRD with PID 15136 (started by 14981 in C:\Users\14981\Desktop\Java\Project\project-01\community)
+2024-01-27 16:05:13,562 INFO [main] c.n.c.ElasticSearchTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-27 16:05:15,046 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-27 16:05:15,046 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-27 16:05:15,344 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 282ms. Found 1 repository interfaces.
+2024-01-27 16:05:15,364 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-27 16:05:15,364 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-27 16:05:15,395 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:363] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nowcoder.community.dao.elasticsearch.DiscussPostRepository.
+2024-01-27 16:05:15,395 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2024-01-27 16:05:16,564 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$24bfc275] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-27 16:05:16,675 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$510db0f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-27 16:05:20,024 INFO [main] o.e.p.PluginsService [PluginsService.java:190] no modules loaded
+2024-01-27 16:05:20,024 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2024-01-27 16:05:20,024 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2024-01-27 16:05:20,024 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2024-01-27 16:05:20,024 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2024-01-27 16:05:20,024 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2024-01-27 16:05:22,192 INFO [main] o.s.d.e.c.TransportClientFactoryBean [TransportClientFactoryBean.java:88] Adding transport node : 127.0.0.1:9300
+2024-01-27 16:05:24,123 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-27 16:05:24,408 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2024-01-27 16:05:25,939 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-01-27 16:05:26,050 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2024-01-27 16:05:26,050 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2024-01-27 16:06:26,190 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-27 16:06:26,242 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-27 16:10:03,202 INFO [main] c.n.c.ElasticSearchTest [StartupInfoLogger.java:50] Starting ElasticSearchTest on DESKTOP-K94GPRD with PID 5152 (started by 14981 in C:\Users\14981\Desktop\Java\Project\project-01\community)
+2024-01-27 16:10:03,205 INFO [main] c.n.c.ElasticSearchTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-27 16:10:04,654 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-27 16:10:04,657 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-27 16:10:04,854 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 189ms. Found 1 repository interfaces.
+2024-01-27 16:10:04,869 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-27 16:10:04,871 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-27 16:10:04,892 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:363] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nowcoder.community.dao.elasticsearch.DiscussPostRepository.
+2024-01-27 16:10:04,892 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2024-01-27 16:10:05,328 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$912f1abc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-27 16:10:05,396 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd7d0939] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-27 16:10:08,584 INFO [main] o.e.p.PluginsService [PluginsService.java:190] no modules loaded
+2024-01-27 16:10:08,587 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2024-01-27 16:10:08,588 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2024-01-27 16:10:08,589 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2024-01-27 16:10:08,589 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2024-01-27 16:10:08,590 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2024-01-27 16:10:10,627 INFO [main] o.s.d.e.c.TransportClientFactoryBean [TransportClientFactoryBean.java:88] Adding transport node : 127.0.0.1:9300
+2024-01-27 16:10:11,606 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-27 16:10:12,089 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2024-01-27 16:10:13,328 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-01-27 16:10:13,428 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2024-01-27 16:10:13,428 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2024-01-27 16:10:13,599 INFO [main] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: uAE7aNm2Sp22BQKOehUqnw
+2024-01-27 16:10:13,645 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-01-27 16:10:13,654 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2024-01-27 16:10:13,655 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2024-01-27 16:10:13,661 INFO [main] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:171] Initializing ExecutorService
+2024-01-27 16:10:13,679 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: uAE7aNm2Sp22BQKOehUqnw
+2024-01-27 16:10:13,685 INFO [main] c.n.c.ElasticSearchTest [StartupInfoLogger.java:59] Started ElasticSearchTest in 11.455 seconds (JVM running for 12.575)
+2024-01-27 16:10:13,686 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:677] [Consumer clientId=consumer-2, groupId=test-consumer-group] Discovered group coordinator windows10.microdone.cn:9092 (id: 2147483647 rack: null)
+2024-01-27 16:10:13,692 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:472] [Consumer clientId=consumer-2, groupId=test-consumer-group] Revoking previously assigned partitions []
+2024-01-27 16:10:13,692 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:375] partitions revoked: []
+2024-01-27 16:10:13,693 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:509] [Consumer clientId=consumer-2, groupId=test-consumer-group] (Re-)joining group
+2024-01-27 16:10:14,316 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-01-27 16:10:14,898 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-01-27 16:10:16,347 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService
+2024-01-27 16:10:46,359 INFO [Thread-2] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:387] Failed to shut down 1 bean with phase value 2147483547 within timeout of 30000: [org.springframework.kafka.config.internalKafkaListenerEndpointRegistry]
+2024-01-27 16:10:46,370 INFO [Thread-2] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-27 16:10:46,370 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [KafkaMessageListenerContainer.java:840] Consumer stopped
+2024-01-27 16:10:46,429 INFO [Thread-2] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-01-27 16:10:46,449 INFO [Thread-2] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2024-01-27 16:17:17,721 INFO [main] c.n.c.ElasticSearchTest [StartupInfoLogger.java:50] Starting ElasticSearchTest on DESKTOP-K94GPRD with PID 13028 (started by 14981 in C:\Users\14981\Desktop\Java\Project\project-01\community)
+2024-01-27 16:17:17,724 INFO [main] c.n.c.ElasticSearchTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-27 16:17:19,108 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-27 16:17:19,112 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-27 16:17:19,707 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 584ms. Found 1 repository interfaces.
+2024-01-27 16:17:19,729 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-27 16:17:19,731 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-27 16:17:19,755 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:363] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nowcoder.community.dao.elasticsearch.DiscussPostRepository.
+2024-01-27 16:17:19,756 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2024-01-27 16:17:20,374 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$57d492ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-27 16:17:20,477 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$84228129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-27 16:17:23,834 INFO [main] o.e.p.PluginsService [PluginsService.java:190] no modules loaded
+2024-01-27 16:17:23,836 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2024-01-27 16:17:23,837 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2024-01-27 16:17:23,838 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2024-01-27 16:17:23,838 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2024-01-27 16:17:23,839 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2024-01-27 16:17:26,375 INFO [main] o.s.d.e.c.TransportClientFactoryBean [TransportClientFactoryBean.java:88] Adding transport node : 127.0.0.1:9300
+2024-01-27 16:17:27,510 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-27 16:17:27,907 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2024-01-27 16:17:29,353 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-01-27 16:17:29,485 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2024-01-27 16:17:29,487 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2024-01-27 16:17:29,734 INFO [main] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: uAE7aNm2Sp22BQKOehUqnw
+2024-01-27 16:17:29,779 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-01-27 16:17:29,785 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2024-01-27 16:17:29,787 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2024-01-27 16:17:29,791 INFO [main] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:171] Initializing ExecutorService
+2024-01-27 16:17:29,814 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: uAE7aNm2Sp22BQKOehUqnw
+2024-01-27 16:17:29,817 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:677] [Consumer clientId=consumer-2, groupId=test-consumer-group] Discovered group coordinator windows10.microdone.cn:9092 (id: 2147483647 rack: null)
+2024-01-27 16:17:29,819 INFO [main] c.n.c.ElasticSearchTest [StartupInfoLogger.java:59] Started ElasticSearchTest in 13.113 seconds (JVM running for 14.373)
+2024-01-27 16:17:29,826 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:472] [Consumer clientId=consumer-2, groupId=test-consumer-group] Revoking previously assigned partitions []
+2024-01-27 16:17:29,828 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:375] partitions revoked: []
+2024-01-27 16:17:29,828 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:509] [Consumer clientId=consumer-2, groupId=test-consumer-group] (Re-)joining group
+2024-01-27 16:17:30,496 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-01-27 16:17:30,718 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-01-27 16:17:32,001 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService
+2024-01-27 16:18:02,003 INFO [Thread-2] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:387] Failed to shut down 1 bean with phase value 2147483547 within timeout of 30000: [org.springframework.kafka.config.internalKafkaListenerEndpointRegistry]
+2024-01-27 16:18:02,008 INFO [Thread-2] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-27 16:18:02,008 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [KafkaMessageListenerContainer.java:840] Consumer stopped
+2024-01-27 16:18:02,033 INFO [Thread-2] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-01-27 16:18:02,042 INFO [Thread-2] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2024-01-27 17:13:46,920 INFO [main] c.n.c.ElasticSearchTest [StartupInfoLogger.java:50] Starting ElasticSearchTest on DESKTOP-K94GPRD with PID 1988 (started by 14981 in C:\Users\14981\Desktop\Java\Project\project-01\community)
+2024-01-27 17:13:46,922 INFO [main] c.n.c.ElasticSearchTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-27 17:13:48,278 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-27 17:13:48,282 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-27 17:13:48,495 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 202ms. Found 1 repository interfaces.
+2024-01-27 17:13:48,513 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-27 17:13:48,515 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-27 17:13:48,543 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:363] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nowcoder.community.dao.elasticsearch.DiscussPostRepository.
+2024-01-27 17:13:48,544 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2024-01-27 17:13:49,114 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$e2777a54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-27 17:13:49,199 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec568d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-27 17:13:52,350 INFO [main] o.e.p.PluginsService [PluginsService.java:190] no modules loaded
+2024-01-27 17:13:52,352 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2024-01-27 17:13:52,352 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2024-01-27 17:13:52,353 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2024-01-27 17:13:52,353 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2024-01-27 17:13:52,354 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2024-01-27 17:13:54,416 INFO [main] o.s.d.e.c.TransportClientFactoryBean [TransportClientFactoryBean.java:88] Adding transport node : 127.0.0.1:9300
+2024-01-27 17:13:55,283 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-27 17:13:55,569 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2024-01-27 17:13:56,793 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-01-27 17:13:56,902 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2024-01-27 17:13:56,903 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2024-01-27 17:13:57,089 INFO [main] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: uAE7aNm2Sp22BQKOehUqnw
+2024-01-27 17:13:57,126 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-01-27 17:13:57,133 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2024-01-27 17:13:57,134 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2024-01-27 17:13:57,137 INFO [main] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:171] Initializing ExecutorService
+2024-01-27 17:13:57,155 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: uAE7aNm2Sp22BQKOehUqnw
+2024-01-27 17:13:57,158 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:677] [Consumer clientId=consumer-2, groupId=test-consumer-group] Discovered group coordinator windows10.microdone.cn:9092 (id: 2147483647 rack: null)
+2024-01-27 17:13:57,159 INFO [main] c.n.c.ElasticSearchTest [StartupInfoLogger.java:59] Started ElasticSearchTest in 11.167 seconds (JVM running for 12.261)
+2024-01-27 17:13:57,164 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:472] [Consumer clientId=consumer-2, groupId=test-consumer-group] Revoking previously assigned partitions []
+2024-01-27 17:13:57,165 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:375] partitions revoked: []
+2024-01-27 17:13:57,165 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:509] [Consumer clientId=consumer-2, groupId=test-consumer-group] (Re-)joining group
+2024-01-27 17:13:58,042 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService
+2024-01-27 17:14:28,046 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [KafkaMessageListenerContainer.java:840] Consumer stopped
+2024-01-27 17:14:28,053 INFO [Thread-2] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-27 17:49:49,245 INFO [main] c.n.c.ElasticSearchTest [StartupInfoLogger.java:50] Starting ElasticSearchTest on DESKTOP-K94GPRD with PID 15064 (started by 14981 in C:\Users\14981\Desktop\Java\Project\project-01\community)
+2024-01-27 17:49:49,248 INFO [main] c.n.c.ElasticSearchTest [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-27 17:49:50,684 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-27 17:49:50,688 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-27 17:49:50,883 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 189ms. Found 1 repository interfaces.
+2024-01-27 17:49:50,901 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-27 17:49:50,902 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-27 17:49:50,930 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:363] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nowcoder.community.dao.elasticsearch.DiscussPostRepository.
+2024-01-27 17:49:50,930 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2024-01-27 17:49:51,484 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$78ec44b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-27 17:49:51,563 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$33dcb2c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-27 17:49:55,220 INFO [main] o.e.p.PluginsService [PluginsService.java:190] no modules loaded
+2024-01-27 17:49:55,222 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2024-01-27 17:49:55,222 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2024-01-27 17:49:55,223 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2024-01-27 17:49:55,223 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2024-01-27 17:49:55,224 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2024-01-27 17:49:57,450 INFO [main] o.s.d.e.c.TransportClientFactoryBean [TransportClientFactoryBean.java:88] Adding transport node : 127.0.0.1:9300
+2024-01-27 17:49:58,343 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-27 17:49:58,687 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2024-01-27 17:49:59,942 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-01-27 17:50:00,065 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2024-01-27 17:50:00,066 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2024-01-27 17:50:00,262 INFO [main] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: uAE7aNm2Sp22BQKOehUqnw
+2024-01-27 17:50:00,299 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-01-27 17:50:00,307 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2024-01-27 17:50:00,307 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2024-01-27 17:50:00,311 INFO [main] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:171] Initializing ExecutorService
+2024-01-27 17:50:00,328 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: uAE7aNm2Sp22BQKOehUqnw
+2024-01-27 17:50:00,331 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:677] [Consumer clientId=consumer-2, groupId=test-consumer-group] Discovered group coordinator windows10.microdone.cn:9092 (id: 2147483647 rack: null)
+2024-01-27 17:50:00,332 INFO [main] c.n.c.ElasticSearchTest [StartupInfoLogger.java:59] Started ElasticSearchTest in 12.193 seconds (JVM running for 13.395)
+2024-01-27 17:50:00,337 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:472] [Consumer clientId=consumer-2, groupId=test-consumer-group] Revoking previously assigned partitions []
+2024-01-27 17:50:00,337 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:375] partitions revoked: []
+2024-01-27 17:50:00,338 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:509] [Consumer clientId=consumer-2, groupId=test-consumer-group] (Re-)joining group
+2024-01-27 17:50:00,998 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService
+2024-01-27 17:50:31,000 INFO [Thread-2] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:387] Failed to shut down 1 bean with phase value 2147483547 within timeout of 30000: [org.springframework.kafka.config.internalKafkaListenerEndpointRegistry]
+2024-01-27 17:50:31,006 INFO [Thread-2] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-27 17:50:31,006 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [KafkaMessageListenerContainer.java:840] Consumer stopped

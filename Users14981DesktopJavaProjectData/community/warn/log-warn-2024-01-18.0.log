@@ -1,0 +1,2 @@
+2024-01-18 16:16:39,698 WARN [restartedMain] o.m.s.m.ClassPathMapperScanner [Logger.java:44] No MyBatis mapper was found in '[com.nowcoder.community]' package. Please check your configuration.
+2024-01-18 20:49:26,561 WARN [http-nio-8080-exec-4] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [221] milliseconds.

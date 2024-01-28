@@ -1,0 +1,19 @@
+2024-01-26 11:50:06,813 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "profile.html"]
+2024-01-26 11:50:15,692 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "profile.html"]
+2024-01-26 11:50:33,087 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "profile.html"]
+2024-01-26 17:00:24,412 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'order clause'
+### The error may exist in file [C:\Users\14981\Desktop\Java\Project\project-01\community\target\classes\mapper\message-mapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select           id,from_id,to_id,conversation_id,content,status,create_time               from message         where status != 2         and from_id = 1         and to_id = ?         and conversation_id = ?         order by createTime desc         limit ?,?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'order clause'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'order clause']
+2024-01-26 17:00:50,556 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'order clause'
+### The error may exist in file [C:\Users\14981\Desktop\Java\Project\project-01\community\target\classes\mapper\message-mapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select           id,from_id,to_id,conversation_id,content,status,create_time               from message         where status != 2         and from_id = 1         and to_id = ?         and conversation_id = ?         order by createTime desc         limit ?,?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'order clause'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'order clause']
